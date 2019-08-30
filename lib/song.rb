@@ -7,10 +7,6 @@ class Song
 
     def initialize(name)
         @name = name
-        save
-    end
-
-    def save
         @@all << self
     end
 
@@ -19,7 +15,6 @@ class Song
     end
 
     def artist_name
-        #binding.pry
         artist == nil ? nil : self.artist.name 
     end
 
