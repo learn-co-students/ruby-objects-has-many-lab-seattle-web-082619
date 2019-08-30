@@ -21,6 +21,7 @@ describe "Artist" do
         expect(adele.songs).to be_a(Array)
         hello = Song.new("Hello")
         hello.artist = adele
+        #binding.pry
         expect(adele.songs).to eq([hello])
       end
     end
